@@ -24,7 +24,7 @@ public DataSource db( ) {
 
  
 
-       /* URI dbUri;
+        URI dbUri;
         
         try {
             dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -41,15 +41,15 @@ public DataSource db( ) {
             e.printStackTrace();
             
             throw new RuntimeException( "no s epuede conectar a la base de datos" );
-        }*/
+        }
 
  
-
+/*
 
         ds.setDriverClassName( "org.postgresql.Driver" );
         ds.setUrl( "jdbc:postgresql://ec2-52-202-66-191.compute-1.amazonaws.com:5432/d601dqtlqgse7j" );
        ds.setUsername( "svprltmotmesyq" );
-        ds.setPassword( "e69d5bdc20722f8258dbf0edfd028b4f3adaf6eca32d7349357c1be935563fa4" );
+        ds.setPassword( "e69d5bdc20722f8258dbf0edfd028b4f3adaf6eca32d7349357c1be935563fa4" );*/
        
         return ds;
     }
