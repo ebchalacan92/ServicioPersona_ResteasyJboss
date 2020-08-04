@@ -47,9 +47,9 @@ public DataSource db( ) {
 
 
         ds.setDriverClassName( "org.postgresql.Driver" );
-        ds.setUrl( "jdbc:postgresql://ec2-18-235-109-97.compute-1.amazonaws.com:5432/d2sb388u4boi5f" );
-       ds.setUsername( "clinivzqhlfrmc" );
-        ds.setPassword( "ee3c0f4fde5f0180290aee62084826e8296e77424060ec8ee41bc32d32177af5" );
+        ds.setUrl( "jdbc:postgresql://ec2-52-202-66-191.compute-1.amazonaws.com:5432/d601dqtlqgse7j" );
+       ds.setUsername( "svprltmotmesyq" );
+        ds.setPassword( "e69d5bdc20722f8258dbf0edfd028b4f3adaf6eca32d7349357c1be935563fa4" );
        
         return ds;
     }
