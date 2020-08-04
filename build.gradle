@@ -1,0 +1,32 @@
+
+
+plugins {
+    id 'war'
+    id 'eclipse-wtp'
+}
+
+repositories {
+   
+    jcenter()
+}
+
+dependencies {
+	compile group: 'org.postgresql', name: 'postgresql', version: '42.2.14'
+	compile group: 'org.apache.commons', name: 'commons-dbcp2', version: '2.7.0'
+	
+	compile group: 'org.jboss.resteasy', name: 'resteasy-core', version: '4.5.5.Final'
+	
+	compile group: 'org.jboss.resteasy', name: 'resteasy-servlet-initializer', version: '4.5.5.Final'
+	
+	compile group: 'org.jboss.resteasy', name: 'resteasy-jackson2-provider', version: '4.5.5.Final'
+	compile group: 'org.jboss.resteasy', name: 'resteasy-client', version: '4.5.5.Final'
+	
+	
+	compile group: 'org.jboss.weld.servlet', name: 'weld-servlet-core', version: '3.1.4.Final'
+	compile group: 'org.jboss.resteasy', name: 'resteasy-cdi', version: '4.5.5.Final'
+	
+	task stage(dependsOn: ['build', 'clean'])
+	build.mustRunAfter clean
+	
+   
+}
