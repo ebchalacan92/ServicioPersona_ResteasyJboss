@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import com.distribuida.servicio.UsuarioServicio;
 import com.distribuida.usuario.Usuario;
 
-@Path("/")
+@Path("/personas")
 @ApplicationScoped
 public class PersonaRest {
 	
